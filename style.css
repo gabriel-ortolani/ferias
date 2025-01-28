@@ -110,7 +110,7 @@ main {
 
 .login h1{
     position: relative;
-    left: 43%;
+    align-self: center;
 }
 
 .login button{
