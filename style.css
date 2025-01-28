@@ -1,19 +1,86 @@
-*{
-    border: 0;
-    padding: 0;
+/* Resetando margens e padding */
+* {
     margin: 0;
-    top: 0;
-    list-style: none;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
 }
 
-header{
-    top: 0;
-    background-color: #73D3FF;
-    width: 100%;
+/* Estilo do corpo */
+body {
+    background: linear-gradient(to bottom right, #73D3FF, #A4E0FF);
+    color: #333;
 }
 
-ul{
+/* Estilo do cabeçalho */
+header {
+    background-color: #4BAFE1;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    color: white;
+}
+
+/* Estilo do conteúdo principal */
+main {
+    padding: 40px 10%;
+}
+
+/* Estilo das seções de conteúdo */
+.content {
     display: flex;
-    justify-content: space-between;
-    padding: 30px;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-bottom: 40px;
+}
+
+/* Estilo de cada card */
+.card {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 45%;
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+.card h2 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    color: #4BAFE1;
+}
+
+.card img {
+    max-width: 100%;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.card p {
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #555;
+}
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
+    .content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        width: 80%;
+    }
+
+    header h1 {
+        font-size: 2rem;
+    }
 }
