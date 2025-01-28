@@ -117,8 +117,13 @@ main {
     max-width: 10%;
     border-radius: 7px;
     position: relative;
-    left: 45%;
+    align-self: center;
+    padding: 5px;
     margin: 10px;
+}
+
+.login button:hover{
+    background-color: rgb(138, 138, 138);
 }
 
 .login label, .login input{
@@ -127,9 +132,19 @@ main {
     padding: 10px;
 }
 
+.login input:hover{
+    background-color: rgb(138, 138, 138);
+}
+
 .login input{
     position: relative;
     left: 2%;
+}
+
+.error{
+    color: red;
+    position: relative;
+    align-self: center;
 }
 
 /* Estilos responsivos */

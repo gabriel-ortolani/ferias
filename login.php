@@ -37,7 +37,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         <input type="password" name="senha" require>
         <button type="submit">enviar</button>
         <!-- Exibe mensagem de erro, caso exista -->
-        <?php if (isset($error)) echo "<p class='message error'>$error</p>"; ?>
+        <?php if (isset($error)) echo "<p class='error'>$error</p>"; ?>
     </form>
 </body>
 </html>
