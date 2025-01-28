@@ -1,3 +1,7 @@
+<?php
+    include('conexao.php');
+    include('validar_sessao.php');
+?>
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -11,6 +15,7 @@
     <header class="header">
         <nav class="nav">
             <h1>Minhas Férias</h1>
+            <a href="logout.php">Sair</a>
         </nav>
     </header>
     <main>

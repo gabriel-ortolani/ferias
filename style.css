@@ -4,19 +4,46 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Arial', sans-serif;
+    text-decoration: none;
+}
+
+.html2, .body2 {
+    height: 100%;
+}
+
+.nav{
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav a{
+    color: white;
+    font-size: 1.8vw;
+    position: relative;
+    top: 10px;
+    right: 10px;
+}
+
+.nav a:hover{
+    font-size: 2vw;
+    transition: 0.5s;
+    color: rgb(199, 199, 199);
 }
 
 /* Estilo do corpo */
 body {
     background: linear-gradient(to bottom right, #73D3FF, #A4E0FF);
     color: #333;
+    background-repeat: no-repeat;
 }
 
 /* Estilo do cabeçalho */
 header {
     background-color: #4BAFE1;
+    background-size: 100%;
     padding: 20px;
     text-align: center;
+
 }
 
 header h1 {
@@ -67,6 +94,42 @@ main {
     font-size: 1rem;
     line-height: 1.5;
     color: #555;
+}
+
+.login{
+    display: flex;
+    flex-direction: column;
+    max-width: 50%;
+    background-color: white;
+    position: relative;
+    top: 15vw;
+    left: 25%;
+    border-radius: 7px;
+    padding: 10px;
+}
+
+.login h1{
+    position: relative;
+    left: 43%;
+}
+
+.login button{
+    max-width: 10%;
+    border-radius: 7px;
+    position: relative;
+    left: 45%;
+    margin: 10px;
+}
+
+.login label, .login input{
+    max-width: 95%;
+    border-radius: 7px;
+    padding: 10px;
+}
+
+.login input{
+    position: relative;
+    left: 2%;
 }
 
 /* Estilos responsivos */
